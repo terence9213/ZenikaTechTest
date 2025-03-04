@@ -10,16 +10,24 @@
         bool _alarmOn = false;
         private long _alarmCount = 0;
 
-
-        public void Check()
+        // Check the value and turn the alarm on if the value is outside of the threshold (else turn alarm off)
+        public void Check(double value)
         {
-            double value = _sensor.NextMeasure();
-
-            if (value < LowThreshold | HighThreshold < value)
+            if (value < LowThreshold || HighThreshold < value)
             {
                 _alarmOn = true;
                 _alarmCount += 1;
             }
+            else
+            {
+                _alarmOn = false;
+            }
+        }
+
+        public void Check()
+        {
+            double value = _sensor.NextMeasure();
+            Check(value);
         }
 
         public bool AlarmOn
