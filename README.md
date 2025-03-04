@@ -3,7 +3,7 @@
 Assumptions and thought process: 
 The purpose of the unit tests are to ensure that the alarm functions as expected.
 The expexted behaviour of the alarm is to turn on when the radioactivity value it receives is outside of its lower and upper threshold range.
-No other behaviours are required to be tested.
+No other behaviours are required to be tested for this exercise.
 
 The unit tests should be performed on the exact same functions that are expected to be used in the final product.
 
@@ -23,3 +23,14 @@ The Check() function of the Alarm class should ONLY take in the radioactivity va
 (querying the sensor is outside of its scope of responsilibty)
 
 Ideally there should be a NuclearPowerPlantManager class that manages all the alarms and sensors, plus other classes that trigger feedback mechanisms. 
+The Sensor's role is to output radioactivity values
+The Alarm's role is to turn on when the input radioactivity values are outside of its thresholds
+The NuclearPowerPlantManager's role is to poll the Sensor values and use the Alarm to check the sensor values
+
+Other minor changes:
+The alarm should be turned off when the radioactivity is within the threshold range.
+
+In the original Check() function, the | OR operator was used instead of ||.
+if (value < LowThreshold | HighThreshold < value)
+As the value cannot be lower than the LowThreshold and higher than the hightreshold at the same time, it is redundant to always evaluate both statements.
+if (value < LowThreshold || HighThreshold < value)

@@ -5,8 +5,6 @@
         private const double LowThreshold = 17;
         private const double HighThreshold = 21;
 
-        Sensor _sensor = new Sensor();
-
         bool _alarmOn = false;
         private long _alarmCount = 0;
 
@@ -22,12 +20,6 @@
             {
                 _alarmOn = false;
             }
-        }
-
-        public void Check()
-        {
-            double value = _sensor.NextMeasure();
-            Check(value);
         }
 
         public bool AlarmOn
