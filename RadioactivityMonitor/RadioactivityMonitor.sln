@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35707.178 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RadioactivityMonitor", "RadioactivityMonitor.csproj", "{335648B6-810E-469A-998A-5F847257FC6E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RadioactivityMonitorTests", "..\RadioactivityMonitorTests\RadioactivityMonitorTests.csproj", "{939C1937-9A53-4AFC-AAD4-B107B659914D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{335648B6-810E-469A-998A-5F847257FC6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{335648B6-810E-469A-998A-5F847257FC6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{335648B6-810E-469A-998A-5F847257FC6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{335648B6-810E-469A-998A-5F847257FC6E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{939C1937-9A53-4AFC-AAD4-B107B659914D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{939C1937-9A53-4AFC-AAD4-B107B659914D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{939C1937-9A53-4AFC-AAD4-B107B659914D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{939C1937-9A53-4AFC-AAD4-B107B659914D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
